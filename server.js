@@ -9,7 +9,7 @@ app.use(express.urlencoded({extended: true}))
 app.use(express.json());
 app.use(bodyparser.json({ type: "application/vnd.api+json"}));
 app.use(bodyparser.text());
-app.use(express.static(pth.join(__dirname + '/app/public')));
+app.use(express.static(path.join(__dirname + '/app/public')));
 //router
 require("./app/routing/apiRoutes")(app);
 require("./app/routing/htmlRoutes")(app);
