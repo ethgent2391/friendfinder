@@ -20,6 +20,7 @@
   "homepage": "https://github.com/ethgent2391/friendfinder#readme",
   "dependencies": {
     "express": "^4.16.4",
+    "path": "^0.12.7",
     "routes": "^2.1.0"
   }
 }

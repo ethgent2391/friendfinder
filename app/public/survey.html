@@ -165,5 +165,26 @@
                         </div>
                 </div>
 
+                <script type="text/javascript">
+                    $('#submit').on('click', function(event) {
+                        event.preventDefault();
+                        var userScoresArray = [];
+                        $('.user-choice option:selected').each(function() {
+                            userScoresArray.push(parseInt($(this).val()));
+                        });
+                        var userProfile = {
+                            name: $("#name").val(),
+                            photo: $("#photo").val(),
+                            scores: userScoresArray
+                        };
+                        $.post("/api/friends", userProfile).done(function(data) {
+                            console.log(data);
+                            $("#matchFriendName").text(data.name);
+                            $('#matchFriendImg').attr("src", data.photo).attr("class", "h-25 w-25");
+                            $("#resultsModal").modal('toggle');
+                        });
+                    });
+                    </script> 
+
 </body>
 </html>
