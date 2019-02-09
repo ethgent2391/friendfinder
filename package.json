@@ -3,6 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "node": "^11.9.0",
+    "path": "^0.12.7",
+    "routes": "^2.1.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -17,11 +25,5 @@
   "bugs": {
     "url": "https://github.com/ethgent2391/friendfinder/issues"
   },
-  "homepage": "https://github.com/ethgent2391/friendfinder#readme",
-  "dependencies": {
-    "express": "^4.16.4",
-    "node": "^11.9.0",
-    "path": "^0.12.7",
-    "routes": "^2.1.0"
-  }
+  "homepage": "https://github.com/ethgent2391/friendfinder#readme"
 }
